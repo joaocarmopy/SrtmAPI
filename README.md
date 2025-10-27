@@ -117,7 +117,7 @@ python main.py --coords_path path/to/coordinates.geojson --output_path path/to/o
 ---
 AGRI IS TECH, AGRI IS TOP, AGRI IS PYAGRO
 
-🅾 @pYAgro_
+Instagram @pYAgro_
 
 ---
 
