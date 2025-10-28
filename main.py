@@ -76,8 +76,14 @@ def run_cli():
     print(f"\nTime of execution {(t()-start_time)/60:.2f} minutes")
 
 if __name__ == "__main__":
+    dev = False
     if api:
-        print("Starting API server on http://127.0.0.1:8000")
-        uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+        if dev:
+            print("Starting API server on http://127.0.0.1:8000")
+            uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+        else:
+            port = int(os.environ.get("PORT", 8000))
+            uvicorn.run("main:app", host="0.0.0.0", port=port)
     else:
         run_cli()
+
