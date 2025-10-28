@@ -15,6 +15,7 @@ from time import time as t
 import argparse
 import warnings
 import uvicorn
+import os
 
 warnings.filterwarnings("ignore")
 
@@ -29,6 +30,12 @@ no_requerid.add_argument(
     action="store_true",
     required=False,
     help="Flag to activate API."
+)
+no_requerid.add_argument(
+    "--dev", "-dev",
+    action="store_true",
+    required=False,
+    help="Flag to activate API in mode dev."
 )
 no_requerid.add_argument(
     "--coords_path", "-cp",
@@ -49,6 +56,7 @@ args = parser.parse_args()
 
 # ============== Get variables ==============#
 api = args.api
+dev = args.dev
 coords_path = args.coords_path
 output_path = args.output_path
 
@@ -76,7 +84,6 @@ def run_cli():
     print(f"\nTime of execution {(t()-start_time)/60:.2f} minutes")
 
 if __name__ == "__main__":
-    dev = False
     if api:
         if dev:
             print("Starting API server on http://127.0.0.1:8000")
