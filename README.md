@@ -46,7 +46,7 @@ python main.py --api
 The server will be available at:
 
 ```
-http://137.131.184.146:8000
+http://144.91.67.158:8000/
 ```
 
 #### API Endpoint
@@ -79,7 +79,7 @@ POST /pyagro_elevations
 ```python
 import requests
 
-url = "http://137.131.184.146:8000/pyagro_elevations"
+url = "http://144.91.67.158:8000/pyagro_elevations"
 
 payload = {
     "geometry": [
@@ -120,5 +120,6 @@ AGRI IS TECH, AGRI IS TOP, AGRI IS PYAGRO
 Instagram hashtag_pYAgro
 
 ---
+
 
 
