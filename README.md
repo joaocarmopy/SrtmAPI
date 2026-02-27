@@ -1,7 +1,7 @@
 
 ---
 
-# SRTM Elevation API - PYAgro
+# SRTM Elevation API - pYdoAgro
 
 **Author:** João Paulo Cardoso do Carmo
 **Date:** 2025-09-24
@@ -115,11 +115,12 @@ python main.py --coords_path path/to/coordinates.geojson --output_path path/to/o
 * Coordinates just in EPSG:4326.
 * API just to Brazil.
 ---
-AGRI IS TECH, AGRI IS TOP, AGRI IS PYAGRO
+AGRI IS TECH, AGRI IS TOP, AGRI IS pYdoAgro
 
-Instagram hashtag_pYAgro
+Instagram pYdoAgro
 
 ---
+
 
 
 
